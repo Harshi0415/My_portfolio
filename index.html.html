@@ -357,6 +357,20 @@
   /* fade-in on scroll */
   .reveal{ opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s ease; }
   .reveal.in{ opacity:1; transform:translateY(0); }
+
+  .proj-links { display: flex; gap: 14px; margin-top: 14px; }
+.proj-links a,
+.cert-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent, #4f46e5);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color .2s;
+}
+.proj-links a:hover,
+.cert-link:hover { border-bottom-color: currentColor; }
+.cert-link { display: inline-block; margin-top: 8px; }
 </style>
 </head>
 <body>
@@ -541,6 +555,10 @@
             <h3>FoodBridge</h3>
             <p>A food-donation platform connecting donors with receivers to help cut food wastage, built around role-based access so donors can give and receivers can accept. Includes REST APIs, donation tracking, database integration, and email notifications.</p>
             <div class="tag-row"><span>Python</span><span>Flask</span><span>React.js</span><span>MySQL</span><span>REST API</span><span>Vercel</span><span>Render</span></div>
+           <div class="proj-links">
+    <a href="https://github.com/YOUR-USERNAME/medtrack" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a href="https://your-live-demo-url.com" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+  </div>
           </div>
         </div>
         <div class="proj reveal">
