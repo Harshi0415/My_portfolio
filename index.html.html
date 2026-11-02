@@ -358,19 +358,11 @@
   .reveal{ opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s ease; }
   .reveal.in{ opacity:1; transform:translateY(0); }
 
-  .proj-links { display: flex; gap: 14px; margin-top: 14px; }
-.proj-links a,
-.cert-link {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--accent, #4f46e5);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color .2s;
-}
-.proj-links a:hover,
-.cert-link:hover { border-bottom-color: currentColor; }
-.cert-link { display: inline-block; margin-top: 8px; }
+  .proj{ color:inherit; text-decoration:none; cursor:pointer; }
+.proj:hover, .proj:focus-visible{ box-shadow:0 14px 34px -14px var(--accent-soft); }
+.proj-cta{ display:inline-block; margin-top:16px; font-size:14px; font-weight:600; color:var(--accent); }
+.proj-cta i{ display:inline-block; font-style:normal; transition:transform .25s ease; }
+.proj:hover .proj-cta i{ transform:translate(3px,-3px); }
 </style>
 </head>
 <body>
@@ -540,14 +532,15 @@
         <h2 class="sec-title">Things I've built</h2>
         <p class="sec-sub">From healthcare scheduling to food donation to genre-bending ML models — each one shipped, not just prototyped.</p>
       </div>
-      <div class="projects">
-        <div class="proj reveal">
+      
+       <a class="proj reveal" href="https://food-bridge-alpha-seven.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Medtrack project">
           <div class="proj-meta"><div class="proj-num">01</div><div class="proj-date">July 2025</div></div>
           <div class="proj-body">
             <h3>Medtrack</h3>
             <p>A web application for booking appointments with specialized doctors. Patients can log prescribed medicines and dosages and get reminders to take them on time; doctors can register and list their specialization.</p>
             <div class="tag-row"><span>HTML5</span><span>CSS3</span><span>Flask</span><span>DynamoDB</span><span>AWS SNS</span></div>
-          </div>
+            <span class="proj-cta">View project <i>↗</i></span> 
+          </a>
         </div>
         <div class="proj reveal">
           <div class="proj-meta"><div class="proj-num">02</div><div class="proj-date">July 2026</div></div>
